@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	 android:layout_height="match_parent"
+	 android:orientation="vertical"
+	 android:background="@drawable/backshop" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/name"
+            android:hint="Name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+
+        <EditText
+            android:id="@+id/quantity"
+            android:hint="Quantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:inputType="number" />
+        
+        <EditText
+            android:id="@+id/price"
+            android:hint="price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="264dp"
+        android:layout_weight="0.64">
+    </ListView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+            
+    <TableRow 
+        android:layout_width="match_parent" 
+        android:gravity="center">
+
+        <ImageButton 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:background="@null" 
+            android:onClick="addItem" 
+            android:src="@drawable/add" />
+
+        <ImageButton 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:background="@null" 
+            android:onClick="clearItem" 
+            android:src="@drawable/clear" />
+        
+        <ImageButton 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:background="@null" 
+            android:onClick="search" 
+            android:src="@drawable/search" />
+
+        <EditText
+            android:id="@+id/total"
+            android:hint="total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:inputType="number" />
+    </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:key="name"
+        android:summary="Your name"
+        android:title="Name" />
+    
+    <CheckBoxPreference
+        android:key="sort"
+        android:summary="Do you want to sort the list?"
+        android:title="Sort list" />
+
+</PreferenceScreen>

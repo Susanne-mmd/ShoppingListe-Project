@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.shoppinglist.MainActivity" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+    
+    <item
+        android:id="@+id/action_delete"
+        android:icon="@drawable/action_delete"
+        android:showAsAction="ifRoom"
+        android:title="Delete"/>
+    
+    <item
+        android:id="@+id/action_sort"
+        android:showAsAction="never"
+        android:title="Sort list"/>
+
+</menu>
+
